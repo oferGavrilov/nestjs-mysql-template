@@ -13,7 +13,7 @@ const ormOptions: TypeOrmModuleOptions = {
   password: '123456',
   database: 'nestjs',
   autoLoadEntities: true,
-  synchronize: true
+  synchronize: false
 }
 @Module({
   imports: [
