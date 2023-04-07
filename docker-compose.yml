@@ -1,16 +1,16 @@
-version: '3.8'
-services:
-  postgres:
-    image: postgres:14
-    container_name: backend-db
-    ports:
-      - 5432:5432
-    volumes:
-      - postgres:/var/lib/posgresql/data
-    environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSGRES_USER =${POSTGRES_USER}
+# version: '3.8'
+# services:
+#   postgres:
+#     image: postgres:14
+#     container_name: backend-db
+#     ports:
+#       - 5432:5432
+#     volumes:
+#       - postgres:/var/lib/posgresql/data
+#     environment:
+#       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+#       - POSGRES_USER =${POSTGRES_USER}
 
-volumes:
-  postgres: 
-    name:backend
+# volumes:
+#   postgres: 
+#     name:backend

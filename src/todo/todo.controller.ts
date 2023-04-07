@@ -1,12 +1,13 @@
-import { Controller  , Get} from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+import { TodoService } from './todo.service';
 
 @Controller('todos')
 export class TodoController {
+  constructor(private todoService: TodoService) {}
 
-
-    // http get verb
-    @Get()
-    query() {
-        return ['Todo1' , 'Todo2' ]
-    }
+  // http get verb
+  @Get()
+  getTodos() {
+    console.log(this.todoService.query());
+  }
 }
